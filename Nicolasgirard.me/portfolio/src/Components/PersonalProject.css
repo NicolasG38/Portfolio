@@ -1,0 +1,30 @@
+h1{
+    margin:100px 5rem;
+}
+
+
+.projectSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectImg{
+    height: 250px;
+    margin: 50px 0;
+}
+
+.boxProject{
+    width: 448px;
+    height: 250px;
+    border:0.25px solid var(--dun) ;
+    border-radius: 3px;
+}
+
+.pojectUl{
+    margin-bottom:2rem ;
+}
+
+span {
+    font-size: .7rem;
+}
