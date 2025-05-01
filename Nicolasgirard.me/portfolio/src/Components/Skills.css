@@ -1,0 +1,29 @@
+.allSkills{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: ;
+    gap:5vw;
+}
+
+.boxSkills{
+    width:350px;
+    height:241px;
+    border: 0.25px solid var(--dun);
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px #000;
+}
+
+p{
+    margin:1rem 0 .2rem 1rem;
+    color: var(--beaver2);
+}
+
+h3{
+    margin: 0 0 1rem 1rem;
+    color: var(c8b395);
+}
+
+ul{
+    margin: 2rem 0 0 4rem;
+}
