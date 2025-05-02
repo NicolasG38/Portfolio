@@ -1,0 +1,20 @@
+.ISBSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.ISBid{
+    font-size: 10rem;
+}
+
+.ISBFirstName{
+    font-family: ExtraLight, sans-serif;
+    font-weight: 200;
+}
+.ISBName{}
+
+.ISBimg{
+    height: 608px;
+}
