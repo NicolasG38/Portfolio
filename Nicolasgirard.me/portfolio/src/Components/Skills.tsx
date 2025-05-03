@@ -6,7 +6,7 @@ function Skills() {
         <>
             <section className={"allSkills"}>
                 <section className={"boxSkills"}>
-                        <p>.01</p>
+                        <p className={"Numbers"}>.01</p>
                         <h3>FRONT SKILLS</h3>
                         <ul>
                             <li>HTML</li>
@@ -17,7 +17,7 @@ function Skills() {
                         </ul>
                 </section>
                 <section className={"boxSkills"}>
-                    <p>.02</p>
+                    <p className={"Numbers"}>.02</p>
                     <h3>BACK SKILLS</h3>
                     <ul>
                         <li>NODEJS</li>
@@ -25,7 +25,7 @@ function Skills() {
                     </ul>
                 </section>
                 <section className={"boxSkills"}>
-                    <p>.03</p>
+                    <p className={"Numbers"}>.03</p>
                     <h3>OTHERS SKILLS</h3>
                     <ul>
                         <li>EXCALIDRAW</li>

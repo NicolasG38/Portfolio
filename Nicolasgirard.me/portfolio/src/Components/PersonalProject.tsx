@@ -14,7 +14,7 @@ function PersonalProject() {
             <section className={"projectSection"}>
                 <img className={"projectImg"} src={"src/assets/images/Resource/Project_3.png"} alt="personal-project 3" />
                 <section className={"boxProject"}>
-                    <p>.04</p>
+                    <p className={"Numbers"}>.04</p>
                     <h3>EN COURS DE DÉVELOPPEMENT</h3>
                     <ul className={"pojectUl"}>
                         <li>SPIRE-PROJECT <span>(Soluce de JV - REACT)</span></li>
