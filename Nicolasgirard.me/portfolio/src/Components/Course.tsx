@@ -1,5 +1,5 @@
 import './Course.css'
-import PPBtn from "../UI-UX/PPBtn.tsx";
+
 
 
 const job=[
@@ -85,7 +85,7 @@ function Course() {
     return (
         <>
             <h1>PARCOURS</h1>
-            <PPBtn/>
+
             <section className="courses">
                 {table}
             </section>

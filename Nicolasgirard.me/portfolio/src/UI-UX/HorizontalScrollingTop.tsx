@@ -12,8 +12,7 @@ function HorizontalScrollingTop() {
         renderMode: "precision",
         rtl:false,
         drag: false,
-
-        slides: { perView :"auto" },
+        slides: { perView : 5 },
         created(s) {
             s.moveToIdx(5, true, animation);
         },

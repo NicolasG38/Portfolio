@@ -4,7 +4,11 @@
     align-content: center;
     justify-content: center;
     height: 70px;
-margin: 100px 0;
+    margin: 100px 0;
+
+}
+.keen-slider__slide{
+    width: 100vw;
 
 }
 

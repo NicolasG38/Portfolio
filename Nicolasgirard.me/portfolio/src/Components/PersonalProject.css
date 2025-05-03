@@ -1,6 +1,4 @@
-h1{
-    margin:100px 5rem;
-}
+
 
 
 .projectSection{
@@ -19,6 +17,7 @@ h1{
     height: 250px;
     border:0.25px solid var(--dun) ;
     border-radius: 3px;
+    box-shadow: 4px 4px 4px #000000;
 }
 
 .pojectUl{
