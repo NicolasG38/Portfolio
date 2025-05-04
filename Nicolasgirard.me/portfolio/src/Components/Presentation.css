@@ -1,0 +1,48 @@
+
+.presentation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 75vw;
+
+}
+.presentationImg{
+    display: flex;
+    justify-content: center;
+    margin-top:10rem;
+}
+
+.presentationSetimg{
+    height: 608px;
+}
+
+.presentation-text{
+    flex-direction: column;
+    font-family: ExtraLight, sans-serif;
+    font-weight: 200;
+    color: var(--dun);
+}
+
+.title{
+    display: flex;
+    font-family: Light, sans-serif;
+    font-weight: 200;
+    font-size: 6rem;
+    color:var(--dun);
+    width: 550px;
+    margin-bottom: 5rem;
+
+}
+
+.presentationResearch{
+    line-height: 200%;
+}
+.presentationResearchText{
+    width: 600px;
+    text-align: justify;
+    margin: 5rem 0 0 0 ;
+}
+
+
+
+

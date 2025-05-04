@@ -4,6 +4,7 @@
     align-content: center;
     flex-wrap:wrap ;
     gap:5vw;
+    margin-bottom: 5rem;
 }
 
 .boxSkills{
@@ -14,13 +15,13 @@
     box-shadow: 4px 4px 4px #000;
 }
 
-
-
-h3{
+.skill-titles{
     margin: 0 0 1rem 1rem;
     color: var(--khaki);
-}
+    font-family: Light, sans-serif;
+    font-weight: 400;
 
+}
 ul{
     margin: 2rem 0 0 4rem;
 }

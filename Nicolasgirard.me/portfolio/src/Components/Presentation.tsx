@@ -1,4 +1,6 @@
 import NicolasG38 from '../assets/images/NicolasG38-NG.png'
+import './Presentation.css'
+import '../App.css'
 
 function Presentation() {
     return (
@@ -9,7 +11,6 @@ function Presentation() {
                 </section>
                 <section className={"presentation-text"}>
                     <h1 className={"title"}>Web Développeur</h1>
-                    <p className={"name"}>Nicolas GIRARD</p>
                     <h3 className={"presentationResearch"}>Alternance - Professionnalisation</h3>
                     <h3 className={"presentationResearch"}>Concepteur développeur d'applications</h3>
                     <h3 className={"presentationResearch"}>Septembre 2025 - 15 mois</h3>
