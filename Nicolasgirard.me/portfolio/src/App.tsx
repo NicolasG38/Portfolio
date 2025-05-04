@@ -33,6 +33,7 @@ function App() {
             <Skills/>
             <PersonalProject/>
             <Course/>
+            <HorizontalScrollingTop/>
             <IntermediaireSectionBottom/>
             <Contact/>
             <SocialBtn />

@@ -1,4 +1,5 @@
 import './PersonalProject.css'
+import '../App.css'
 
 
 
