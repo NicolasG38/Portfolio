@@ -4,20 +4,20 @@
     align-items: center;
     position: fixed;
     width: 100vw;
+    z-index: 1050;
 }
-
 .navbar-ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 644px;
-    height: 80px;
+    height: 60px;
     border: 0.5px solid var(--dun);
     border-radius: 3px;
     backdrop-filter: blur(2rem) saturate(150%);
-    z-index: 50;
-    &::before {
+    position: relative;
 
+    &::before {
         content: "";
         position: fixed;
         block-size: 0.125rem;
@@ -30,5 +30,8 @@
 }
 .navbar-li{
     list-style: none;
+}
+
+.navBarIcon{
 
 }
