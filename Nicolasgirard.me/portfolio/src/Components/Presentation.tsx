@@ -10,7 +10,7 @@ function Presentation() {
                     <img className={"presentationSetimg"} src={NicolasG38} alt={"Nicolas GIRARD se présente les bras croisés"} />
                 </section>
                 <section className={"presentation-text"}>
-                    <h1 className={"title"}>Web Développeur</h1>
+                    <h1 className={"title"}>Développeur Full Stack</h1>
                     <h3 className={"presentationResearch"}>Alternance - Professionnalisation</h3>
                     <h3 className={"presentationResearch"}>Concepteur développeur d'applications</h3>
                     <h3 className={"presentationResearch"}>Septembre 2025 - 15 mois</h3>
