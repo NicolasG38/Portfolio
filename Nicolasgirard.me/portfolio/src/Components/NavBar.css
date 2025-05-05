@@ -4,8 +4,8 @@
     align-items: center;
     position: fixed;
     width: 100vw;
+    z-index: 1050;
 }
-
 .navbar-ul{
     display: flex;
     justify-content: space-around;
@@ -16,7 +16,7 @@
     border-radius: 3px;
     backdrop-filter: blur(2rem) saturate(150%);
     position: relative;
-    z-index: 1050;
+
     &::before {
         content: "";
         position: fixed;
@@ -30,5 +30,8 @@
 }
 .navbar-li{
     list-style: none;
+}
+
+.navBarIcon{
 
 }
