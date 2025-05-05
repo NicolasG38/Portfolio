@@ -12,7 +12,7 @@ import'./UI-UX/HorizontalScrollingTop.css'
 
 import Presentation from "./Components/Presentation.tsx";
 import Skills from "./Components/Skills.tsx";
-import Navigation from "./Components/Navigation.tsx";
+import NavBar from "./Components/NavBar.tsx";
 import HorizontalScrollingTop from "./UI-UX/HorizontalScrollingTop.tsx";
 import PersonalProject from "./Components/PersonalProject.tsx";
 import Course from "./Components/Course.tsx";
@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <header>
-        <Navigation />
+        <NavBar />
       </header>
         <main>
             <Presentation/>

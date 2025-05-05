@@ -6,7 +6,7 @@ import '../App.css'
 function PersonalProject() {
     return (
         <>
-            <h1>PROJETS PERSONNEL</h1>
+            <h1 className={"titleSection"}>PROJETS PERSONNEL</h1>
 
             <section className={"projectSection"}>
                 <img className={"projectImg"} src={"src/assets/images/Resource/Project_1.png"} alt="personal-project 1" />
