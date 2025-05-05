@@ -10,6 +10,7 @@ import'./font/MonaSans-Black.ttf'
 import './App.css'
 import'./UI-UX/HorizontalScrollingTop.css'
 
+import Cursor from "./UI-UX/Cursor.tsx"
 import Presentation from "./Components/Presentation.tsx";
 import Skills from "./Components/Skills.tsx";
 import NavBar from "./Components/NavBar.tsx";
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+        <Cursor />
       <header>
         <NavBar />
       </header>
