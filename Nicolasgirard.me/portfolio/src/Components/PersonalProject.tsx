@@ -26,7 +26,7 @@ function PersonalProject({
                     layoutId={`card-image-container-${id}`}
                 >
                     <motion.img
-                        className="card-image"
+                        className=" card-image"
                         src={`src/assets/images/Resource/${id}.png`}
                         alt=""
                         style={{ top, bottom, width, left }}
