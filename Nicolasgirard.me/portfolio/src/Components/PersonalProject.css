@@ -179,16 +179,19 @@ span {
     justify-content: stretch;
     flex-direction: column;
     position: relative;
+    filter: sepia(100%);
 }
 
 .card-image {
     object-fit: cover;
     height: 100%;
-}
 
+}
 .open .card-image-container,
 .open .title-container {
     z-index: 1;
+    filter: sepia(0%);
+
 }
 
 .title-container {
@@ -219,8 +222,9 @@ span {
     inset: 0;
     z-index: 2;
     position: fixed;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(33, 33, 33, 0.8);
     will-change: opacity;
+
 }
 
 .overlay a {
