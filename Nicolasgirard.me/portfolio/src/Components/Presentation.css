@@ -4,12 +4,13 @@
     justify-content: space-around;
     align-items: center;
     min-width: 75vw;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
 
 }
 .presentationImg{
     display: flex;
     justify-content: center;
-    margin-top:10rem;
 }
 
 .presentationSetimg{
