@@ -12,7 +12,7 @@
     align-items: center;
     width: 644px;
     height: 60px;
-    border: 0.5px solid var(--dun);
+    border: 0.25px solid var(--dun);
     border-radius: 3px;
     backdrop-filter: blur(2rem) saturate(150%);
     position: relative;
@@ -30,8 +30,13 @@
 }
 .navbar-li{
     list-style: none;
+    & p:nth-child(1){
+        font-family: ExtraLight, sans-serif;
+        font-weight: 200;
+        font-size: 1.25rem;
+    }
 }
 
 .navBarIcon{
-
+height: 36px;
 }

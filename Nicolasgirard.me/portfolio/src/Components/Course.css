@@ -1,17 +1,18 @@
 .courses{
     display: flex;
     flex-wrap: wrap;
+    gap:30px;
+    margin:0 auto;
+    padding:0 30px;
     justify-content: space-around;
     align-items: center;
 }
-.courseArticle{
-    width: 228px;
-    height: 230px;
-    border: .5px solid var(--dun);
-    border-radius: 3px;
-    margin: 50px;
-}
 
+.btnCourse{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
 .jobName{
     font-family: ExtraLight, sans-serif;
     font-weight: 200;
