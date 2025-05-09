@@ -9,13 +9,15 @@ const job=[
         Label:"Auto-entrepreneur",
         Name:"TheLazyAgency",
         Date:"2025 => ...",
-        key:2,
+        id:2,
+        key:1,
     },
     {
         Number:".05.2",
         Label:"Étudiant-Reconversion",
         Name:"Wild Code School",
         Date:"2021 => 2024",
+        id:2,
         key:2,
     },
     {
@@ -23,121 +25,129 @@ const job=[
         Label:"Agent Administratif Logistique",
         Name:"ML2LOG",
         Date:"2021 => 2024",
-        key:2,
+        id:2,
+        key:3,
     },
     {
         Number:".05.4",
         Label:"Agent Administratif Logistique",
         Name:"ML2LOG",
         Date:"2021 => 2024",
-        key:2,
+        id: 2,
+        key:4,
     },
     {
         Number:".05.5",
         Label:"Agent Administratif Logistique",
         Name:"ML2LOG",
         Date:"2021 => 2024",
-        key:2,
+        id: 2,
+        key:5,
     },
     {
         Number:".05.6",
         Label:"Agent Administratif Logistique",
         Name:"ML2LOG",
         Date:"2021 => 2024",
-        key:2,
+        id: 2,
+        key:6,
     },
     {
         Number:".05.7",
         Label:"Agent Administratif Logistique",
         Name:"ML2LOG",
         Date:"2021 => 2024",
-        key:2,
+        id: 2,
+        key:7,
     },
     {
         Number:".05.8",
         Label:"Agent Administratif Logistique",
         Name:"ML2LOG",
         Date:"2021 => 2024",
-        key:2,
+        id: 2,
+        key:8,
     },
     {
-        Number:".05.9",
-        Label:"Agent Administratif Logistique",
-        Name:"ML2LOG",
-        Date:"2021 => 2024",
-        key:2,
+        Number: ".05.9",
+        Label: "Agent Administratif Logistique",
+        Name: "ML2LOG",
+        Date: "2021 => 2024",
+        id: 2,
+        key: 9,
     },
-]
-
-const diplome=[
     {
         Number:".05.10",
         Label:"Bac Pro Commerce",
         Name:"GRETA de Grenoble",
         Date:"2011 => 2012",
-        key:1,
+        id: 1,
+        key:10,
     },
     {
         Number:".05.11",
         Label:"BEP Compatilité",
         Name: "Lycée E.Herriot",
         Date:"2008 => 2008",
-        key:1,
+        id:1,
+        key:11,
     },
 ]
 
 function Course() {
-    const [isVisibleJob, setIsVisibleJob] = useState(true)
     const [isVisible, setIsVisible] = useState(true)
+    const [isVisibleDiplome, setIsVisibleDiplome] = useState(true)
 
-    const jobMap= job.map((item=>
-            <>
-            <section className={"courses"}>
-
-                    <AnimatePresence initial={false}>
-                        {isVisibleJob ? (
-                            <motion.div
-                                initial={{opacity: 0, scale: 0}}
-                                animate={{opacity: 1, scale: 1}}
-                                exit={{opacity: 0, scale: 0}}
-                                style={box}
-                                key={item.key}
-                                >
-
-                                    <p key={item.key} className={"Numbers"}>{item.Number}</p>
-                                    <h3 className={"jobName"}>{item.Label}</h3>
-                                    <h4 className={"jobName"}>{item.Name}</h4>
-                                    <p className={"jobDate"}>{item.Date}</p>
-                            </motion.div>
-                        ) : null}
-                    </AnimatePresence>
-            </section>
-            </>
-    ))
-
-
-    const diplomeMap= diplome.map((item=>
+    let jobMap= job.map((item=>
             <>
                 <section className={"courses"}>
-                    <AnimatePresence initial={false}>
-                        {isVisible ? (
-                            <motion.div
-                                initial={{opacity: 0, scale: 0}}
-                                animate={{opacity: 1, scale: 1}}
-                                exit={{opacity: 0, scale: 0}}
-                                style={box}
-                                key={item.key}
-                            >
-                                <p key={item.key} className={"Numbers"}>{item.Number}</p>
-                                <h3 className={"jobName"}>{item.Label}</h3>
-                                <h4 className={"jobName"}>{item.Name}</h4>
-                                <p className={"jobDate"}>{item.Date}</p>
-                            </motion.div>
-                        ) : null}
-                    </AnimatePresence>
+                        <AnimatePresence initial={false}>
+                            {isVisible ? (
+                                <motion.div
+                                    initial={{opacity: 0, scale: 0}}
+                                    animate={{opacity: 1, scale: 1}}
+                                    exit={{opacity: 0, scale: 0}}
+                                    style={box}
+                                    key={item.key}
+                                    >
+                                        <p id={item.id} key={item.key} className={"Numbers"}>{item.Number}</p>
+                                        <h3 className={"jobName"}>{item.Label}</h3>
+                                        <h4 className={"jobName"}>{item.Name}</h4>
+                                        <p className={"jobDate"}>{item.Date}</p>
+                                </motion.div>
+                            ) : null}
+                        </AnimatePresence>
                 </section>
             </>
     ))
+
+    console.log(jobMap)
+
+    const jobValue= job.filter((job)=>{
+        return job.id === 2
+    })
+    const jobDiplome= job.filter((job)=>{
+        return job.id === 1
+    })
+
+    console.log(jobValue)
+    console.log(jobDiplome)
+
+    function sortExperience() {
+        if(!jobValue) {
+            setIsVisible(isVisible)
+        }else if(jobValue){
+            setIsVisible(!isVisible)
+        }
+    }
+
+    function sortDiplome() {
+        if(!jobDiplome) {
+            setIsVisibleDiplome(isVisibleDiplome)
+        }else if(jobDiplome){
+            setIsVisibleDiplome(!isVisibleDiplome)
+        }
+    }
 
     return (
         <>
@@ -145,24 +155,24 @@ function Course() {
             <section className={"btnCourse"}>
                 <motion.button
                     style={button}
-                    onClick={() => setIsVisibleJob(!isVisibleJob)}
+                    onClick={() => sortExperience()}
                     whileTap={{ y: 1 }}
                     key={2}
                 >
-                    {isVisibleJob ? "EMPLOIS" : "MONTRER EMPLOIS"}
+                    {isVisible ? "EMPLOIS" : "MONTRER EMPLOIS"}
                 </motion.button>
                 <motion.button
                     style={button}
-                    onClick={() => setIsVisible(!isVisible)}
+                    onClick={() => sortDiplome()}
                     whileTap={{ y: 1 }}
                     key={1}
                 >
-                    {isVisible ? "DIPLÔMES" : "MONTRER DIPLÔMES"}
+                    {isVisibleDiplome ? "DIPLÔMES" : "MONTRER DIPLÔMES"}
                 </motion.button>
             </section>
 
             <section className="courses">
-                {jobMap}{diplomeMap}
+                {jobMap}
             </section>
         </>
     )
