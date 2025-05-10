@@ -21,6 +21,7 @@ import IntermediaireSectionBottom from "./Components/IntermediaireSectionBottom.
 import Contact from "./Components/Contact.tsx";
 import SocialBtn from "./UI-UX/SocialBtn.tsx";
 
+
 function App() {
 
   return (
