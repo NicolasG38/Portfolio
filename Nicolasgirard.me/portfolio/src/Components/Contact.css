@@ -19,7 +19,7 @@
     font-weight: 200;
     font-size: 2rem;
 }
-.sectionInput{
+.form{
     display: flex;
     flex-direction: column;
     justify-content: center;

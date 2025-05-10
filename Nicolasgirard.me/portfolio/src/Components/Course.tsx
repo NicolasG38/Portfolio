@@ -98,7 +98,7 @@ function Course() {
     const [isVisible, setIsVisible] = useState(true)
     const [isVisibleDiplome, setIsVisibleDiplome] = useState(true)
 
-    let jobMap= job.map((item=>
+    const jobMap= job.map((item=>
             <>
                 <section className={"courses"}>
                         <AnimatePresence initial={false}>
@@ -110,7 +110,7 @@ function Course() {
                                     style={box}
                                     key={item.key}
                                     >
-                                        <p id={item.id} key={item.key} className={"Numbers"}>{item.Number}</p>
+                                        <p key={item.key} className={"Numbers"}>{item.Number}</p>
                                         <h3 className={"jobName"}>{item.Label}</h3>
                                         <h4 className={"jobName"}>{item.Name}</h4>
                                         <p className={"jobDate"}>{item.Date}</p>
