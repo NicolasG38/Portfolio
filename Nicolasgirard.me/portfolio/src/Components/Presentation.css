@@ -40,10 +40,38 @@
 }
 .presentationResearchText{
     width: 600px;
+    min-width: 300px;
     text-align: justify;
     margin: 5rem 0 0 0 ;
 }
 
+@media screen and (max-width: 576px){
+    .presentation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .presentation-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .title{
+        max-width: 546px;
+        min-width: 300px;
+        width: 300px;
+        font-size: 4rem;
+    }
+    .presentationResearch{
+        text-align: start;
+    }
+    .presentationResearchText{
+        max-width: 546px;
+        min-width: 300px;
+        width: 300px;
+    }
+}
 
 
 
