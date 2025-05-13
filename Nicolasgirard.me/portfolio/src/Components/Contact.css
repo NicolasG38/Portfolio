@@ -57,3 +57,17 @@
         color:var(--beaver2);
     }
 }
+
+@media screen and (max-width: 576px){
+    .contact{
+    width: 90vw;
+    }
+    .contactInput{
+        width:90vw;
+    }
+    .contactTextarea{
+        width: 90vw;
+        max-width: 90vw;
+        min-width: 90vw;
+    }
+}
