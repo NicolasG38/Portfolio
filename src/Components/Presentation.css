@@ -71,6 +71,11 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-        background: aqua;
+    }
+    .title{
+        width: 95vw;
+    }
+    .presentationText{
+        margin-bottom: 2rem;
     }
 }
