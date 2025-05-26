@@ -60,7 +60,10 @@
 
 @media screen and (max-width: 576px){
     .contact{
-    width: 90vw;
+    width: 100vw;
+    }
+    .contactBox{
+        width: 95vw;
     }
     .contactInput{
         width:90vw;
