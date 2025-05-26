@@ -9,7 +9,7 @@ function Contact(){
                     <p className={"Numbers"}>.06</p>
                     <h1 className={"titleNameContact"}>CONTACT</h1>
                     <section className={"sectionForm"}>
-                        <form className={"form"} action={""} method="POST" >
+                        <form className={"form"} action={"action.php"} method="POST" >
                             <input className={"contactInput"} type={"text"} placeholder={"Prénom"}/>
                             <input className={"contactInput"} type={"text"} placeholder={"Nom"}/>
                             <input className={"contactInput"} type={"email"} placeholder={"Email"}/>
@@ -17,7 +17,6 @@ function Contact(){
                             <SendBtn />
                         </form>
                     </section>
-
                 </section>
             </section>
         </>

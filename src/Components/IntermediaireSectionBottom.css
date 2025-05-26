@@ -6,7 +6,7 @@
 }
 
 .ISBid{
-    font-size: 10rem;
+    font-size: 8rem;
 }
 
 .ISBFirstName{
@@ -23,6 +23,14 @@
     }
     .ISBid{
         font-size: 5rem;
-
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 786px){
+    .ISBSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .ISBid{
+        font-size: 8rem;
     }
 }
