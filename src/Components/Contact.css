@@ -74,3 +74,20 @@
         min-width: 90vw;
     }
 }
+
+@media screen and (min-width: 576px) and (max-width: 768px){
+    .contact{
+        width: 100vw;
+    }
+    .contactBox{
+        width: 95vw;
+    }
+    .contactInput{
+        width:90vw;
+    }
+    .contactTextarea{
+        width: 90vw;
+        max-width: 90vw;
+        min-width: 90vw;
+    }
+}

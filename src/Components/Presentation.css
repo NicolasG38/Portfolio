@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100vw;
     min-width: 75vw;
     margin-top: 20vh;
     margin-bottom: 20vh;
@@ -74,6 +75,21 @@
     }
     .title{
         width: 95vw;
+    }
+    .presentationText{
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 768px){
+    .presentation{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100vw;
+    }
+    .presentation-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .presentationText{
         margin-bottom: 2rem;
