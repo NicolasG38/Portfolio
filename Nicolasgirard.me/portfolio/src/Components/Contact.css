@@ -1,0 +1,73 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactBox{
+    display: flex;
+    flex-direction: column;
+    border:0.5px solid var(--dun);
+    border-radius: 3px;
+    width:800px;
+    height:750px;
+    margin-bottom: 10px;
+}
+.titleNameContact{
+    margin: 0 5rem;
+    font-family: ExtraLight, sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactInput{
+    width: 664px;
+    height: 50px;
+    background-color: var(--eerieBlack);
+    outline: none;
+    border: none;
+    color:var(--beaver2);
+    margin:1rem 0;
+    padding:0 1rem;
+    font-family: Regular, sans-serif;
+    &::placeholder {
+        color: var(--beaver2);
+    }
+}
+.contactTextarea{
+    width: 664px;
+    max-width: 664px;
+    min-width: 664px;
+    height: 200px;
+    min-height: 200px;
+    max-height: 200px;
+    background-color: var(--eerieBlack);
+    outline: none;
+    border: none;
+    padding: 1rem;
+    font-family: Regular, sans-serif;
+    color:var(--beaver2);
+    &::placeholder{
+        font-family: Regular, sans-serif;
+        color:var(--beaver2);
+    }
+}
+
+@media screen and (max-width: 576px){
+    .contact{
+    width: 90vw;
+    }
+    .contactInput{
+        width:90vw;
+    }
+    .contactTextarea{
+        width: 90vw;
+        max-width: 90vw;
+        min-width: 90vw;
+    }
+}
