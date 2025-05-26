@@ -60,8 +60,11 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 250px;
+        width: 95vw;
         padding-right: 55px;
         cursor: pointer;
     }
+    .btnSocial{
+    width: 95vw;
+     }
 }
