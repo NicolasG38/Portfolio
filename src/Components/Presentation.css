@@ -6,24 +6,20 @@
     min-width: 75vw;
     margin-top: 20vh;
     margin-bottom: 20vh;
-
 }
 .presentationImg{
     display: flex;
     justify-content: center;
 }
-
 .presentationSetimg{
     height: 608px;
 }
-
 .presentation-text{
     flex-direction: column;
     font-family: ExtraLight, sans-serif;
     font-weight: 200;
     color: var(--dun);
 }
-
 .title{
     display: flex;
     font-family: Light, sans-serif;
@@ -32,9 +28,7 @@
     color:var(--dun);
     width: 550px;
     margin-bottom: 5rem;
-
 }
-
 .presentationResearch{
     line-height: 200%;
 }
@@ -44,7 +38,6 @@
     text-align: justify;
     margin: 5rem 0 0 0 ;
 }
-
 @media screen and (max-width: 576px){
     .presentation{
         display: flex;
@@ -72,6 +65,12 @@
         width: 300px;
     }
 }
-
-
-
+@media screen and (max-width: 576px){
+    .presentation{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        background: aqua;
+    }
+}

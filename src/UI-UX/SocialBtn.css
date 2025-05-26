@@ -48,3 +48,20 @@
     margin-bottom: 50px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 576px){
+    .BtnSocials{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btnSocialLinkedIn{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 250px;
+        padding-right: 55px;
+        cursor: pointer;
+    }
+}
