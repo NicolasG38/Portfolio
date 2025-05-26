@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "motion/react"
 import { useState } from "react"
 
 
+
 const job=[
     {
         Number:".05.1",
@@ -17,7 +18,7 @@ const job=[
         Label:"Étudiant-Reconversion",
         Name:"Wild Code School",
         Date:"2021 => 2024",
-        id:2,
+        id:1,
         key:2,
     },
     {
@@ -98,53 +99,45 @@ function Course() {
     const [isVisible, setIsVisible] = useState(true)
     const [isVisibleDiplome, setIsVisibleDiplome] = useState(true)
 
-    const jobMap= job.map((item=>
-            <>
-                <section className={"courses"}>
-                        <AnimatePresence initial={false}>
-                            {isVisible ? (
-                                <motion.div
-                                    initial={{opacity: 0, scale: 0}}
-                                    animate={{opacity: 1, scale: 1}}
-                                    exit={{opacity: 0, scale: 0}}
-                                    style={box}
-                                    key={item.key}
-                                    >
-                                        <p key={item.key} className={"Numbers"}>{item.Number}</p>
-                                        <h3 className={"jobName"}>{item.Label}</h3>
-                                        <h4 className={"jobName"}>{item.Name}</h4>
-                                        <p className={"jobDate"}>{item.Date}</p>
-                                </motion.div>
-                            ) : null}
-                        </AnimatePresence>
-                </section>
-            </>
-    ))
-
-    console.log(jobMap)
-
-    const jobValue= job.filter((job)=>{
-        return job.id === 2
-    })
-    const jobDiplome= job.filter((job)=>{
-        return job.id === 1
+    const filtredJob= job.filter((job)=>{
+        return job.id
+    }).map((job)=>{
+        return (
+            <section className={"courses"}>
+                <AnimatePresence initial={false}>
+                    {isVisibleDiplome && job.id=== 1 || isVisible && job.id=== 2 ? (
+                        <motion.div
+                            initial={{opacity: 0, scale: 0}}
+                            animate={{opacity: 1, scale: 1}}
+                            exit={{opacity: 0, scale: 0}}
+                            style={box}
+                            key={job.key}
+                        >
+                            <p key={job.key} className={"Numbers"}>{job.Number}</p>
+                            <h3 className={"jobName"}>{job.Label}</h3>
+                            <h4 className={"jobName"}>{job.Name}</h4>
+                            <p className={"jobDate"}>{job.Date}</p>
+                        </motion.div>
+                    ) : null}
+                </AnimatePresence>
+            </section>
+        )
     })
 
-    console.log(jobValue)
-    console.log(jobDiplome)
+    console.log(filtredJob)
 
-    function sortExperience() {
-        if(!jobValue) {
+    const sortExperience=()=> {
+        if(!filtredJob) {
             setIsVisible(isVisible)
-        }else if(jobValue){
+        }else if(filtredJob){
             setIsVisible(!isVisible)
         }
     }
 
-    function sortDiplome() {
-        if(!jobDiplome) {
+    const sortDiplome=()=> {
+        if(!filtredJob) {
             setIsVisibleDiplome(isVisibleDiplome)
-        }else if(jobDiplome){
+        }else if(filtredJob){
             setIsVisibleDiplome(!isVisibleDiplome)
         }
     }
@@ -155,7 +148,7 @@ function Course() {
             <section className={"btnCourse"}>
                 <motion.button
                     style={button}
-                    onClick={() => sortExperience()}
+                    onClick={sortExperience}
                     whileTap={{ y: 1 }}
                     key={2}
                 >
@@ -163,7 +156,7 @@ function Course() {
                 </motion.button>
                 <motion.button
                     style={button}
-                    onClick={() => sortDiplome()}
+                    onClick={sortDiplome}
                     whileTap={{ y: 1 }}
                     key={1}
                 >
@@ -172,7 +165,7 @@ function Course() {
             </section>
 
             <section className="courses">
-                {jobMap}
+                {filtredJob}
             </section>
         </>
     )
