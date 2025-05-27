@@ -4,7 +4,7 @@ import SendBtn from "../UI-UX/SendBtn.tsx";
 function Contact(){
     return (
         <>
-            <section className={"contact"}>
+            <section className={"contact"} id={"contact"}>
                 <section  className={"contactBox"}>
                     <p className={"Numbers"}>.06</p>
                     <h1 className={"titleNameContact"}>CONTACT</h1>

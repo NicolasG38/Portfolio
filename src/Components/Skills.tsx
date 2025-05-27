@@ -4,7 +4,7 @@ import './Skills.css'
 function Skills() {
     return (
         <>
-            <section className={"allSkills"}>
+            <section className={"allSkills"} id={"skills"}>
                 <section className={"boxSkills"}>
                         <p className={"Numbers"}>.01</p>
                         <h3 className={"skill-titles"}>FRONT SKILLS</h3>

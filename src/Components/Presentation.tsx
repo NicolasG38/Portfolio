@@ -5,7 +5,7 @@ import '../App.css'
 function Presentation() {
     return (
         <>
-            <section className={"presentation"}>
+            <section className={"presentation"} id={"presentation"}>
                 <section className={"presentationImg"}>
                     <img className={"presentationSetimg"} src={NicolasG38} alt={"Nicolas GIRARD se présente les bras croisés"} />
                 </section>
