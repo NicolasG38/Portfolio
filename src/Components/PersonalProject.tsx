@@ -27,7 +27,7 @@ function PersonalProject({
                 >
                     <motion.img
                         className=" card-image"
-                        src={`src/assets/images/Resource/${id}.png`}
+                        src={`../assets/images/Resource/${id}.png`}
                         alt=""
                         style={{ top, bottom, width, left }}
                         layoutId={`card-image-${id}`}
@@ -90,7 +90,7 @@ function Item({ id, close }: { id: string; close: VoidFunction }) {
                     >
                         <motion.img
                             className="card-image"
-                            src={`src/assets/images/Resource/${id}.png`}
+                            src={`../assets/images/Resource/${id}.png`}
                             alt=""
                             style={{ top, bottom, width, left }}
                             layoutId={`card-image-${id}`}
@@ -137,8 +137,8 @@ export default function AppStore() {
                 </div>
                 <div className="avatar">
                     <img
-                        src="src/assets/images/logo_V1.1.png"
-                        alt="Photo of Matt Perry"
+                        src="../assets/images/logo_V1.1.png"
+                        alt="Icon social de Nicolas GIRARD"
                         width={40}
                         height={40}
                     />

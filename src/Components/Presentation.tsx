@@ -1,4 +1,4 @@
-import NicolasG38 from '../assets/images/NicolasG38-NG.png'
+import NicolasG38 from '../../public/assets/images/NicolasG38-NG.png'
 import './Presentation.css'
 import '../App.css'
 

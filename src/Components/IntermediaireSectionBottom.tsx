@@ -5,7 +5,7 @@ function IntermediaireSectionBottom(){
         <>
             <section className={"ISBSection"}>
                 <h2 className={"ISBid ISBFirstName"}>Nicolas</h2>
-                <img className={"ISBimg"} src={"src/assets/images/NicolasG38-NG.png"} alt="Nicolas" />
+                <img className={"ISBimg"} src={"../assets/images/NicolasG38-NG.png"} alt="Nicolas" />
                 <h2 className={"ISBid ISBName"}>GIRARD</h2>
             </section>
         </>

@@ -7,22 +7,22 @@ import './NavBar.css'
 const iconNav=[
     {
         name:"Home",
-        icon:"src/assets/images/nav/home.svg",
+        icon:"public/assets/images/nav/home.svg",
         id:1,
     },
     {
         name:"Projet personel",
-        icon:"src/assets/images/nav/code.svg",
+        icon:"public/assets/images/nav/code.svg",
         id:2,
     },
     {
         name:"Parcours",
-        icon:"src/assets/images/nav/assignment.svg",
+        icon:"public/assets/images/nav/assignment.svg",
         id:3,
     },
     {
         name:"Contact",
-        icon:"src/assets/images/nav/mail.svg",
+        icon:"public/assets/images/nav/mail.svg",
         id:4,
     }
 ]
