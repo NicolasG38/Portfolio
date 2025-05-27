@@ -26,14 +26,14 @@ function HorizontalScrollingTop() {
     return (
         <>
             <div ref={sliderRef} className="keen-slider" >
-                <img src={"src/assets/images/Resource/HTML5.svg"} className="keen-slider__slide number-slide1" alt={""} />
-                <img src={"src/assets/images/Resource/CSS3.svg"} className="keen-slider__slide number-slide2" alt={""} />
-                <img src={"src/assets/images/Resource/React.svg"} className="keen-slider__slide number-slide3" alt={""} />
-                <img src={"src/assets/images/Resource/Vitejs.svg"} className="keen-slider__slide number-slide4" alt={""} />
-                <img src={"src/assets/images/Resource/Node.js.svg"} className="keen-slider__slide number-slide5" alt={""} />
-                <img src={"src/assets/images/Resource/VSC.svg"} className="keen-slider__slide number-slide6" alt={""} />
-                <img src={"src/assets/images/Resource/nextjs.svg"} className="keen-slider__slide number-slide7" alt={""} />
-                <img src={"src/assets/images/Resource/php.svg"} className="keen-slider__slide number-slide8" alt={""} />
+                <img src={"../assets/images/Resource/HTML5.svg"} className="keen-slider__slide number-slide1" alt={""} />
+                <img src={"../assets/images/Resource/CSS3.svg"} className="keen-slider__slide number-slide2" alt={""} />
+                <img src={"../assets/images/Resource/React.svg"} className="keen-slider__slide number-slide3" alt={""} />
+                <img src={"../assets/images/Resource/Vitejs.svg"} className="keen-slider__slide number-slide4" alt={""} />
+                <img src={"../assets/images/Resource/Node.js.svg"} className="keen-slider__slide number-slide5" alt={""} />
+                <img src={"../assets/images/Resource/VSC.svg"} className="keen-slider__slide number-slide6" alt={""} />
+                <img src={"../assets/images/Resource/nextjs.svg"} className="keen-slider__slide number-slide7" alt={""} />
+                <img src={"../assets/images/Resource/php.svg"} className="keen-slider__slide number-slide8" alt={""} />
             </div>
         </>
     )

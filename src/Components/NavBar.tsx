@@ -8,25 +8,25 @@ import './NavBar.css'
 const iconNav=[
     {
         name:"Home",
-        icon:"src/assets/images/nav/home.svg",
+        icon:"public/assets/images/nav/home.svg",
         link:"#home",
         id:1,
     },
     {
         name:"Projet personel",
-        icon:"src/assets/images/nav/code.svg",
+        icon:"public/assets/images/nav/code.svg",
         link:"#app-store",
         id:2,
     },
     {
         name:"Parcours",
-        icon:"src/assets/images/nav/assignment.svg",
+        icon:"public/assets/images/nav/assignment.svg",
         link:"#course",
         id:3,
     },
     {
         name:"Contact",
-        icon:"src/assets/images/nav/mail.svg",
+        icon:"public/assets/images/nav/mail.svg",
         link:"#contact",
         id:4,
     }
@@ -216,11 +216,6 @@ const MenuToggle = ({ toggle }: { toggle: () => void }) => (
         </svg>
     </button>
 )
-
-/**
- * ==============   Styles   ================
- */
-
 
 const nav: React.CSSProperties = {
     width: 300,
