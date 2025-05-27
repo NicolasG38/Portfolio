@@ -26,7 +26,7 @@ const iconNav=[
         id:4,
     }
 ]
-
+console.log (iconNav[0].icon)
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
     const containerRef = useRef<HTMLDivElement>(null)
@@ -75,8 +75,9 @@ const navVariants = {
 
 const Navigation = () => (
     <motion.ul style={list} variants={navVariants}>
-        {[0, 1, 2, 3, 4, 5, 6].map((i) => (
+        {[0].map((i) => (
             <MenuItem i={i} key={i} />
+
         ))}
     </motion.ul>
 )
@@ -98,31 +99,56 @@ const itemVariants = {
     },
 }
 
-const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF","#9C1AFF","#D309E1"]
-
-const iconMapName = iconNav.map((nav=>
-        nav.name
-))
+const colors = ["#9f8170"]
 
 const MenuItem = ({ i }: { i: number }) => {
-    const border = `2px solid ${colors[i]}`
-
+    const border = `1px solid ${colors[i]}`
     return (
+        <>
         <motion.li
             style={listItem}
             variants={itemVariants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
         >
-            <div style={{ ...iconPlaceholder, border }}>img</div>
-            <div style={{ ...textPlaceholder, border }}>texxte</div>
+            <div style={{ ...iconPlaceholder, border }}><img className={"iconBurger"} src={iconNav[0].icon}/></div>
+            <div style={{ ...textPlaceholder, border }}>{iconNav[0].name}</div>
         </motion.li>
+        <motion.li
+            style={listItem}
+            variants={itemVariants}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+        >
+            <div style={{ ...iconPlaceholder, border }}><img className={"iconBurger"} src={iconNav[1].icon}/></div>
+            <div style={{ ...textPlaceholder, border }}>{iconNav[1].name}</div>
+        </motion.li>
+            <motion.li
+                style={listItem}
+                variants={itemVariants}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+            >
+                <div style={{ ...iconPlaceholder, border }}><img className={"iconBurger"} src={iconNav[2].icon}/></div>
+                <div style={{ ...textPlaceholder, border }}>{iconNav[2].name}</div>
+            </motion.li>
+            <motion.li
+                style={listItem}
+                variants={itemVariants}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+            >
+                <div style={{ ...iconPlaceholder, border }}><img className={"iconBurger"} src={iconNav[3].icon}/></div>
+                <div style={{ ...textPlaceholder, border }}>{iconNav[3].name}</div>
+            </motion.li>
+
+        </>
     )
 }
 
 const sidebarVariants = {
     open: (height = 1000) => ({
-        clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+        clipPath: `circle(${height * 2 + 200}px at 30px 30px)`,
         transition: {
             type: "spring",
             stiffness: 20,
@@ -130,7 +156,7 @@ const sidebarVariants = {
         },
     }),
     closed: {
-        clipPath: "circle(30px at 40px 40px)",
+        clipPath: "circle(30px at 40px 44px)",
         transition: {
             delay: 0.2,
             type: "spring",
@@ -150,7 +176,7 @@ const Path = (props: PathProps) => (
     <motion.path
         fill="transparent"
         strokeWidth="3"
-        stroke="hsl(0, 0%, 18%)"
+        stroke="hsl(0, 0%, 0%)"
         strokeLinecap="round"
         {...props}
     />
@@ -159,11 +185,14 @@ const Path = (props: PathProps) => (
 const MenuToggle = ({ toggle }: { toggle: () => void }) => (
     <button style={toggleContainer} onClick={toggle}>
         <svg width="23" height="23" viewBox="0 0 23 23">
+
             <Path
                 variants={{
                     closed: { d: "M 2 2.5 L 20 2.5" },
                     open: { d: "M 3 16.5 L 17 2.5" },
+
                 }}
+
             />
             <Path
                 d="M 2 9.423 L 20 9.423"
@@ -175,7 +204,7 @@ const MenuToggle = ({ toggle }: { toggle: () => void }) => (
             />
             <Path
                 variants={{
-                    closed: { d: "M 2 16.346 L 20 16.346" },
+                    closed: { d: "M 2 16.346 L 20 16.346"},
                     open: { d: "M 3 2.5 L 17 16.346" },
                 }}
             />
@@ -193,27 +222,32 @@ const nav: React.CSSProperties = {
 }
 
 const toggleContainer: React.CSSProperties = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     outline: "none",
     border: "none",
     WebkitUserSelect: "none",
     MozUserSelect: "none",
     cursor: "pointer",
-    position: "absolute",
-    top: 18,
+    position: "fixed",
+    top: 19,
     left: 15,
     width: 50,
     height: 50,
     borderRadius: "50%",
-    background: "transparent",
+    background: "#dac5a7",
+    zIndex: 10,
 }
 
 const list: React.CSSProperties = {
     listStyle: "none",
     padding: 25,
     margin: 0,
-    position: "absolute",
+    position: "fixed",
     top: 80,
-    width: 230,
+    width: 250,
+    zIndex: 10,
 }
 
 const listItem: React.CSSProperties = {
@@ -225,23 +259,34 @@ const listItem: React.CSSProperties = {
     listStyle: "none",
     marginBottom: 20,
     cursor: "pointer",
+    position: "relative",
+    zIndex:10,
 }
 
 const iconPlaceholder: React.CSSProperties = {
-    width: 40,
+    width: 60,
     height: 40,
     borderRadius: "50%",
     flex: "40px 0",
     marginRight: 20,
-    backgroundColor: "#fff",
+    backgroundColor: "transparent",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "relative",
+    zIndex: 10,
 }
 
 const textPlaceholder: React.CSSProperties = {
     borderRadius: 3,
-    width: 200,
-    height: 20,
+    display: "flex",
+    alignItems: "center",
+    padding: ".5rem",
+    width: 250,
+    height: 30,
     flex: 1,
-    backgroundColor: "transparent",
+    position: "relative",
+    zIndex: 10,
 }
 
 /**

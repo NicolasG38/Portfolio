@@ -64,11 +64,21 @@ height: 36px;
         overflow: hidden;
     }
     .backgroundNav {
-    background-color: var(--dun);
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--anthracite);
+        outline:none;
+        border: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 10;
 }
+    .iconBurger{
+        width: 26px;
+        height: 26px;
+    }
 }

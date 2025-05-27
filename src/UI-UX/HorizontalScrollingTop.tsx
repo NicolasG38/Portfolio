@@ -12,7 +12,7 @@ function HorizontalScrollingTop() {
         renderMode: "precision",
         rtl:false,
         drag: false,
-        slides: { perView : 5 },
+        slides: { perView : 7 },
         created(s) {
             s.moveToIdx(5, true, animation);
         },
@@ -32,6 +32,8 @@ function HorizontalScrollingTop() {
                 <img src={"src/assets/images/Resource/Vitejs.svg"} className="keen-slider__slide number-slide4" alt={""} />
                 <img src={"src/assets/images/Resource/Node.js.svg"} className="keen-slider__slide number-slide5" alt={""} />
                 <img src={"src/assets/images/Resource/VSC.svg"} className="keen-slider__slide number-slide6" alt={""} />
+                <img src={"src/assets/images/Resource/nextjs.svg"} className="keen-slider__slide number-slide7" alt={""} />
+                <img src={"src/assets/images/Resource/php.svg"} className="keen-slider__slide number-slide8" alt={""} />
             </div>
         </>
     )
