@@ -4,36 +4,41 @@ import * as motion from "motion/react-client"
 import { useEffect, useRef, useState } from "react"
 import './NavBar.css'
 
+
 const iconNav=[
     {
         name:"Home",
         icon:"src/assets/images/nav/home.svg",
+        link:"#home",
         id:1,
     },
     {
         name:"Projet personel",
         icon:"src/assets/images/nav/code.svg",
+        link:"#app-store",
         id:2,
     },
     {
         name:"Parcours",
         icon:"src/assets/images/nav/assignment.svg",
+        link:"#course",
         id:3,
     },
     {
         name:"Contact",
         icon:"src/assets/images/nav/mail.svg",
+        link:"#contact",
         id:4,
     }
 ]
-console.log (iconNav[0].icon)
+
 function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
     const containerRef = useRef<HTMLDivElement>(null)
     const { height } = useDimensions(containerRef)
 
     const iconMap= iconNav.map((nav=>
-                <li className={"navbar-li"}><img key={nav.id} className={"navBarIcon"} src={nav.icon} alt={nav.name} /></li>
+                <li className={"navbar-li"}><a href={nav.link}><img key={nav.id} className={"navBarIcon"} src={nav.icon} alt={nav.name} /></a></li>
     ));
     return (
         <>

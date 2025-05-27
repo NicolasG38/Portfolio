@@ -149,11 +149,6 @@ export default function AppStore() {
     )
 }
 
-/**
- * ==============   Mock data   ================
- */
-
-// Photos by Unsplash
 const items: Item[] = [
     {
         id: "Project_1",
