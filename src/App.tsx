@@ -27,7 +27,7 @@ function App() {
   return (
     <>
         <Cursor />
-      <header>
+      <header id={"home"}>
         <NavBar />
       </header>
         <main>

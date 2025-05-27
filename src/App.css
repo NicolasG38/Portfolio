@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --anthracite:#333;
     --eerieBlack:#23211E;

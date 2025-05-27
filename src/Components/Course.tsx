@@ -144,7 +144,7 @@ function Course() {
 
     return (
         <>
-            <h1>PARCOURS</h1>
+            <h1 className={"store-title course-title"} id={"course"}>PARCOURS</h1>
             <section className={"btnCourse"}>
                 <motion.button
                     style={button}
