@@ -9,11 +9,11 @@ function Skills() {
                         <p className={"Numbers"}>.01</p>
                         <h3 className={"skill-titles"}>FRONT SKILLS</h3>
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JAVASCRIPT</li>
+                            <li>HTML / CSS / JAVASCRIPT</li>
                             <li>REACT / VITEJS</li>
                             <li>TYPESCRIPT</li>
+                            <li>NEXSTJS</li>
+                            <li>PHP</li>
                         </ul>
                 </section>
                 <section className={"boxSkills"}>
@@ -22,6 +22,7 @@ function Skills() {
                     <ul>
                         <li>NODEJS</li>
                         <li>EXPRESSJS</li>
+                        <li>MySQL</li>
                     </ul>
                 </section>
                 <section className={"boxSkills"}>
